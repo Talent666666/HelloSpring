@@ -11,6 +11,7 @@ public class MainApp {
         ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
         HelloWorld obj = context.getBean("helloWorld",HelloWorld.class);
         obj.getMessage();
+        System.out.println();
     }
 
 }
